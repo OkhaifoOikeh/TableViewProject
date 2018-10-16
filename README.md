@@ -34,7 +34,7 @@ pod install
 
 ### Running
 
-After installing the required frameworkd run the project using Xcode
+After installing the required framework run the project using Xcode remember its TableViewProject.xcworkspace not .xcodeproj
 
 
 ## Authors
