@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import AlamofireImage
+import Foundation
 
 //adding class DataSource and Delegate for our TableView
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -109,6 +110,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.releaseDateLabel.text = contained.releaseDate
         cell.viewArtistButton.tag = indexPath.row
         
+      
         
         
         //displaying cell image
@@ -121,6 +123,34 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         
       return cell
+        
+    }
+    
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        let albumUrl = ItunesModelContainer[indexPath.section].albumUrl
+        
+        if let url = URL(string: albumUrl!){
+            UIApplication.shared.openURL(url)
+            print(albumUrl ?? "no url")
+        }
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    
+    @IBAction func visitArtist(_ sender: UIButton) {
+       
+        let indexvalue = sender.tag
+        let artistUrl = ItunesModelContainer[indexvalue].artistUrl
+       
+        if let url = URL(string: artistUrl!){
+            UIApplication.shared.openURL(url)
+             print(artistUrl ?? "no url")
+        }
         
     }
     

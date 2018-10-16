@@ -24,7 +24,7 @@ class TableViewCellController: UITableViewCell {
     // Initialization code
         
         
-        viewArtistButton.addTarget(self, action: Selector(("connected:")), for: .touchUpInside)
+      
         
 }
 
@@ -34,9 +34,7 @@ override func setSelected(_ selected: Bool, animated: Bool) {
     // Configure the view for the selected state
 }
     
-    func connected(sender: UIButton){
-    
-    }
+   
     
 
 }
