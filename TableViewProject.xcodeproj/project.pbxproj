@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E71A11AF2175AB5E00DB0757 /* ItunesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71A11AE2175AB5E00DB0757 /* ItunesModel.swift */; };
 		E79A2DDB2175A27200DA3DDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79A2DDA2175A27200DA3DDB /* AppDelegate.swift */; };
 		E79A2DDD2175A27200DA3DDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79A2DDC2175A27200DA3DDB /* ViewController.swift */; };
 		E79A2DE02175A27200DA3DDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79A2DDE2175A27200DA3DDB /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E71A11AE2175AB5E00DB0757 /* ItunesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesModel.swift; sourceTree = "<group>"; };
 		E79A2DD72175A27200DA3DDB /* TableViewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79A2DDA2175A27200DA3DDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E79A2DDC2175A27200DA3DDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				E79A2DE92175A27300DA3DDB /* Info.plist */,
 				E79A2DE12175A27200DA3DDB /* TableViewProject.xcdatamodeld */,
 				E79A2DEF2175A8B900DA3DDB /* TableViewCellController.swift */,
+				E71A11AE2175AB5E00DB0757 /* ItunesModel.swift */,
 			);
 			path = TableViewProject;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				E79A2DDD2175A27200DA3DDB /* ViewController.swift in Sources */,
 				E79A2DDB2175A27200DA3DDB /* AppDelegate.swift in Sources */,
+				E71A11AF2175AB5E00DB0757 /* ItunesModel.swift in Sources */,
 				E79A2DE32175A27200DA3DDB /* TableViewProject.xcdatamodeld in Sources */,
 				E79A2DF02175A8B900DA3DDB /* TableViewCellController.swift in Sources */,
 			);
