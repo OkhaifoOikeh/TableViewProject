@@ -22,14 +22,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="datacell" rowHeight="119" id="iwm-MP-cfg">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="datacell" rowHeight="119" id="iwm-MP-cfg" customClass="TableViewCellController" customModule="TableViewProject" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="119"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iwm-MP-cfg" id="LE5-N1-2ee">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="118.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hbH-CT-5Is">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hbH-CT-5Is">
                                                     <rect key="frame" x="0.0" y="6" width="103" height="103"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -72,6 +72,14 @@
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="albumImage" destination="hbH-CT-5Is" id="gog-2H-jZn"/>
+                                            <outlet property="albumNameLabel" destination="0lj-wh-lKn" id="Gdg-WE-FIQ"/>
+                                            <outlet property="artistNameLabel" destination="C2B-d3-O1f" id="bz2-Sr-SPK"/>
+                                            <outlet property="genreLabel" destination="fSM-3W-SfM" id="1NA-ZX-Cbg"/>
+                                            <outlet property="releaseDateLabel" destination="2Dn-xX-Jyu" id="bAg-f8-LaV"/>
+                                            <outlet property="viewArtistButton" destination="bcb-ah-qjS" id="fc1-gR-c0G"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
