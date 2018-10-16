@@ -17,13 +17,15 @@ class TableViewCellController: UITableViewCell {
     @IBOutlet weak var releaseDateLabel: UILabel!
     @IBOutlet weak var viewArtistButton: UIButton!
     
-    
-    
-    
+ 
     
     override func awakeFromNib() {
     super.awakeFromNib()
     // Initialization code
+        
+        
+        viewArtistButton.addTarget(self, action: Selector(("connected:")), for: .touchUpInside)
+        
 }
 
 override func setSelected(_ selected: Bool, animated: Bool) {
@@ -31,5 +33,10 @@ override func setSelected(_ selected: Bool, animated: Bool) {
     
     // Configure the view for the selected state
 }
+    
+    func connected(sender: UIButton){
+    
+    }
+    
 
 }
